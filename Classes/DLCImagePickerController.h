@@ -26,6 +26,11 @@
     GPUImagePicture *staticPicture;
     UIImageOrientation staticPictureOriginalOrientation;
     
+@protected
+    BOOL isStatic;
+    BOOL hasBlur;
+    
+    int selectedFilter;
 }
 
 @property (nonatomic, weak) IBOutlet GPUImageView *imageView;
