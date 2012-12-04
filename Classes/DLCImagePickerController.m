@@ -667,7 +667,7 @@ outputJPEGQuality;
     }
     
     if (outputImage) {
-        staticPicture = [[GPUImagePicture alloc] initWithImage:outputImage smoothlyScaleOutput:YES];
+        staticPicture = [[GPUImagePicture alloc] initWithImage:outputImage smoothlyScaleOutput:NO]; //smoothlyScaleOutput改成YES以提高画面质量
         staticPictureOriginalOrientation = outputImage.imageOrientation;
         isStatic = YES;
         [self dismissViewControllerAnimated:YES completion:nil];
