@@ -229,7 +229,11 @@ outputJPEGQuality;
         [filter addTarget:self.imageView];
     }
     
-    [filter prepareForImageCapture];
+    if (hasBlur) {
+        [blurFilter prepareForImageCapture];
+    }else{
+        [filter prepareForImageCapture];
+    }
     
 }
 
